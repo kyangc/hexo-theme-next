@@ -36,10 +36,6 @@ for $mixin in $mixins
 @import "_common/_core/helpers";
 
 
-// Fonts
-@import "_common/_fonts/icon-font";
-@import "_common/_fonts/icon-" + hexo-config('icon_font');
-
 
 // Vendors
 @import "_common/_vendor/highlight/highlight";
@@ -55,7 +51,9 @@ for $mixin in $mixins
 
 
 // Components
+@import "_common/_component/blockquote-center";
 @import "_common/_component/buttons";
+@import "_common/_component/posts";
 @import "_common/_component/posts-expand";
 @import "_common/_component/posts-collapse";
 @import "_common/_component/posts-type";
@@ -67,6 +65,7 @@ for $mixin in $mixins
 @import "_common/_component/back-to-top";
 @import "_common/_component/duoshuo";
 @import "_common/_component/jiathis";
+
 
 
 // Page specific styles

@@ -1,26 +1,21 @@
-{% set useCustomLogo = theme.custom_logo.replace and theme.custom_logo.image %}
-
-<div class="site-meta {% if useCustomLogo %}custom-logo{% endif %}">
-  {% if useCustomLogo %}
-    <h1 class="site-meta-headline">
-      <a class="custom-logo-brand" href="{{ config.root }}" rel="start">
-        <img class="custom-logo-image" src="{{ theme.custom_logo.image }}" alt="{{ config.title }}"/>
+<div class="site-meta {% if theme.custom_logo.enabled %}custom-logo{% endif %}">
+  {% if theme.custom_logo.image and not theme.scheme %}
+    <div class="site-meta-headline">
+      <a>
+        <img class="custom-logo-image" src="{{ theme.custom_logo.image }}"
+             alt="{{ config.title }}"/>
       </a>
-    </h1>
-    <p class="custom-logo-site-title">
-      <a href="{{ config.root }}">{{ config.title }}</a>
-    </p>
-    <p class="custom-logo-site-subtitle">{{ config.subtitle }}</p>
-  {% else %}
-    <span class="logo-line-before"><i></i></span>
-    <a href="{{ config.root }}" class="brand" rel="start">
-          <span class="logo">
-            <i class="icon-next-logo"></i>
-          </span>
-      <span class="site-title">{{ config.title }}</span>
-    </a>
-    <span class="logo-line-after"><i></i></span>
+    </div>
   {% endif %}
+
+  <div class="custom-logo-site-title">
+    <a href="{{ config.root }}"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">{{ config.title }}</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">{{ config.subtitle }}</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -40,8 +35,8 @@
         {% set itemName = name.toLowerCase() %}
         <li class="menu-item menu-item-{{ itemName }}">
           <a href="{{ url_for(path) }}" rel="section">
-            {% if theme.menu_icons %}
-              <i class="menu-item-icon icon-next-{{ itemName }}"></i> <br />
+            {% if theme.menu_icons.enable %}
+              <i class="menu-item-icon fa fa-{{theme.menu_icons[itemName] || 'question-circle'}} fa-fw"></i> <br />
             {% endif %}
             {{ __('menu.' + itemName) }}
           </a>
@@ -52,8 +47,8 @@
       {% if not theme.scheme and theme.swiftype_key %}
         <li class="menu-item menu-item-search">
           <a href="#" class="st-search-show-outputs">
-            {% if theme.menu_icons %}
-              <i class="menu-item-icon icon-next-search"></i> <br />
+            {% if theme.menu_icons.enable %}
+              <i class="menu-item-icon fa fa-search icon-next-search"></i> <br />
             {% endif %}
             {{ __('menu.search') }}
           </a>
