@@ -1,10 +1,10 @@
 # when running hexo in a subdirectory (e.g. domain.tld/blog), remove leading slashes ( "/archives" -> "archives" )
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
   archives: /archives
   tags: /tags
+  about: /about
   #commonweal: /404.html
 
 # Place your favicon.ico to /source directory.
@@ -32,23 +32,23 @@ menu_icons: true
 # Icon fonts
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
-icon_font: default
+#icon_font: default
 #icon_font: fifty-shades
 #icon_font: feather
-#icon_font: linecons
+icon_font: linecons
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night bright
 
 
 # MathJax Support
-mathjax:
+mathjax: true
 
 
 # Schemes
-#scheme: Mist
+scheme: Mist
 
 
 # Sidebar, available value:
@@ -83,9 +83,9 @@ use_font_lato: true
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: ROOT
+  admin_enable: true
+  user_id: 2612246
+  admin_nickname: KYANGC
 
 ## DO NOT EDIT THE FOLLOWING SETTINGS
 ## UNLESS YOU KNOW WHAT YOU ARE DOING
