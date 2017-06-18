@@ -7,6 +7,7 @@
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/3.3.0/pangu.min.js"></script>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
@@ -80,5 +81,6 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
+  <script>pangu.spacingPage();</script>
 </body>
 </html>
