@@ -79,7 +79,7 @@ menu_icons:
 # Schemes
 # scheme: Muse
 scheme: Mist
-#scheme: Pisces
+# scheme: Pisces
 # scheme: Gemini
 
 
@@ -120,6 +120,7 @@ social_icons:
   Instagram: instagram
   StackOverflow: stack-overflow
   Weibo: weibo
+  Instagram: instagram
 
 # Blog rolls
 #links_title: Links
@@ -133,6 +134,7 @@ social_icons:
 # in site  directory(source/uploads): /uploads/avatar.jpg
 avatar: http://ojanerta1.bkt.clouddn.com/2017-06-18-cat-avatar.jpeg
 
+
 # Table Of Contents in the Sidebar
 toc:
   enable: true
@@ -143,16 +145,17 @@ toc:
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
 
+
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
+creative_commons: by-nc-sa
 #creative_commons:
 
 sidebar:
   # Sidebar Position, available value: left | right
+  #position: left
   position: right
-  #position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
