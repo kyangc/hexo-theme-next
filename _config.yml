@@ -352,7 +352,7 @@ baidu_analytics: 79e5f1777443ff6072c9987f30cad699
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: kyangc-1
   count: true
 
@@ -370,10 +370,10 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  enable: true
+  appid:  BJrzgG1BKclyDP6ysInRUETr-gzGzoHsz
+  appkey:  3fUzRiD2iLjQPipYyuyU9QgQ
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
   avatar: mm # gravatar style
@@ -533,9 +533,9 @@ leancloud_visitors:
 firestore:
   enable: false
   collection: articles #required, a string collection name to access firestore database
-  apiKey: #required
-  projectId: #required
-  bluebird: false #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
+  apiKey: AIzaSyBKEgo6puHAdzEVPCQRIMLi7V5qtRVvo4s
+  projectId: blog-81836
+  bluebird: true #enable this if you want to include bluebird 3.5.1(core version) Promise polyfill
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
