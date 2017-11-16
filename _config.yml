@@ -418,7 +418,6 @@ gitment:
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
 jiathis: false
-  enbale: false
   ##uid: Get this uid from http://www.jiathis.com/
 #add_this_id:
 
